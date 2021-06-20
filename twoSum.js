@@ -12,7 +12,7 @@ var twoSum = function(nums, target) {
               
               return result
           }
-          numberIndex.set(num, i);
+          numberIndex.set(num, i);s
       }
       
       
