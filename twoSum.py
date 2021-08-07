@@ -1,12 +1,9 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        result = {}
-        for i in range(len(nums)):
-            if nums[i] in result: 
-                return result[nums[i], i]
-            result[target - nums[i]] = i
+def twoNumberSum(array, targetSum):
+    # Write your code here.
+	for i in range(len(array)):
+		firstNum = array[i]
+		for j in range(i + 1, len(array)):
+			secondNum = array[j]
+			if firstNum + secondNum == targetSum:
+				return [firstNum, secondNum]
+	return []
